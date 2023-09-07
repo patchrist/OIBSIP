@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #77777728;
+    color: #333;
+  }
+header {
+    background-color: #ffffffae;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    height: 70vh;
+    background-image: url("C:/Users/patri/Downloads/White-Abstract-BG - Flip.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+header h1 {
+    font-family: "Dancing Script", cursive;
+    color: #555;
+    margin: 0;
+  }
+header #about {
+    text-align: center;
+    padding: 100px;
+  }
+header #about h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+  }
+header #about p {
+    font-family: "Courgette", cursive;
+    font-size: 20px;
+  }
+.dropdown {
+    display: inline-block;
+    position: relative;
+    top: -340px;
+    left: 130vh;
+    font-family: "Courgette", cursive;
+  }
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Courgette", cursive;
+    background-color: #dddddd00;
+  }
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: #ffffffb5;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
+  
+.dropdown:hover .dropdown-options {
+    display: block;
+  }
+  
+.dropdown-options a {
+    display: block;
+    color: #000000;
+    padding: 20px 40px;
+    text-decoration: none;
+  }
+.dropdown-options a:hover {
+    color: #0a0a23;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+  }
+#exp-but {
+    color: #0a0a23;
+    border-style: solid;
+    border-radius: 100px;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Courgette", cursive;
+    margin: -100px auto;
+    position: relative;
+    transition-duration: 0.5s;
+  }
+#exp-but:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+
+#slideshow {
+    overflow: hidden;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+.slide-wrapper {
+    width: calc(95% * 4);
+    animation: slide 10s ease infinite;
+    display: flex;
+  }
+.slide {
+    width: 95%;
+  }
+@keyframes slide {
+    20% {
+      transform: translateX(0);
+    }
+    40% {
+      transform: translateX(-25%);
+    }
+    60% {
+      transform: translateX(-50%);
+    }
+    80% {
+      transform: translateX(-75%);
+    }
+  }
+#about h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+#about p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+  }
+#purpose {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px 0;
+    background-image: url("C:/Users/patri/Downloads/White-Abstract-BG.jpg");
+    background-position: center;
+  }
+.purpose-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+.purpose-item {
+    background-color: #f9f9f930;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.purpose-item h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: "Dancing Script", cursive;
+    transition-duration: 0.5s;
+  }
+.purpose-item:hover h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "Dancing Script", cursive;
+  }
+.purpose-item p {
+    font-size: 20px;
+    color: #666;
+    font-family: "Courgette", cursive;
+  }
+#stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f94c;
+    padding: 60px 0;
+  }
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+.stats-data {
+    flex: 1;
+    padding: 40px;
+    margin: 10px;
+    width: 280px;
+    height: 140px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+.stats-data h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+.stats-data span {
+    display: block;
+    font-size: 18px;
+    font-family: "Courgette", cursive;
+    transition-duration: 0.5s;
+  }
+.stats-data:hover span {
+    font-size: 20px;
+  }
+footer {
+    text-align: center;
+    padding: 20px;
+  }

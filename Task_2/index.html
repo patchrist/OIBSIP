@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Raleway:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <title>Sample Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-content">
+            <h1>Patrick Nithish</h1>
+            <p>Web Designer & Developer</p>
+            <p>Passionate about creating beautiful and functional websites.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/patrick-nithish-a2706b246/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/patchrist"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Passionate about creating seamless and engaging user experiences, I'm a front-end developer with a knack for turning design concepts into interactive digital realities. With a strong eye for detail and a dedication to staying up-to-date with the latest web technologies, I strive to craft user interfaces that combine aesthetics with functionality.</p>
+    </section>
+
+    <section class="skills" id="skills">
+        <div>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Project 1: E-Commerce Website Redesign</h3>
+            <p><b>Description:</b> Led the redesign of an existing e-commerce platform, focusing on enhancing user experience and modernizing the interface.</p> 
+            <p><b>Role:</b> Front-end lead, responsible for revamping the user interface, optimizing performance, and integrating responsive design.</p>
+            <p><b>Outcome:</b> Decreased bounce rates by 25%, leading to a 20% increase in conversion rates within the first quarter post-launch.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Interactive Event Scheduler</h3>
+            <p><b>Description:</b> Developed a dynamic event scheduling app using React, allowing users to manage their schedules and receive real-time updates.</p>
+            <p><b>Role:</b> Sole front-end developer, responsible for architecting the app's structure, implementing user interactions, and optimizing performance.</p>
+            <p><b>Outcome:</b> Garnered praise from users for the app's intuitive interface, leading to a 4.8/5 user satisfaction rating.</p>
+        </div>
+    </section>
+
+    <section class="case-studies" id="case-studies">
+        <h2>Case Studies</h2>
+        <div class="case-studies-container">
+            <h3>Improving Page Load Performance</h3>
+            <p><b>Problem:</b> A client's website had sluggish page load times, resulting in high bounce rates and poor search engine ranking</p>
+            <p><b>Solution:</b> Developed a Python script that automated the process, reducing onboarding time by 80%.</p>
+            <p><b>Outcome:</b> Enhanced customer satisfaction and improved onboarding efficiency.</p>    
+        </div>
+
+        <div class="case-studies-container">
+            <h3>Accessibility Enhancement for Education Platform</h3>
+            <p><b>Problem:</b> An education platform's user interface was not fully accessible to users with disabilities.</p>
+            <p><b>Solution:</b> Conducted an accessibility audit, revamped the UI with proper semantic elements, and implemented ARIA attributes.</p>
+            <p><b>Outcome:</b> Achieved WCAG 2.0 AA compliance, making the platform usable by a wider range of users and demonstrating a commitment to inclusivity.</p>    
+    </section>
+
+    <section class="contact" id="contact">
+                
+        <h2>Contact Me</h2>
+        <div>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </section>
+
+    <footer>
+        <p>Designed By: Patrick Nithish</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const navLinks = document.querySelectorAll("nav a");
+          const sections = document.querySelectorAll("section");
+      
+          function getActiveSection() {
+            const scrollPosition = window.scrollY + 100;
+      
+            return [...sections].findIndex(
+              (section, index) =>
+                scrollPosition >= section.offsetTop &&
+                scrollPosition < (sections[index + 1]?.offsetTop || Infinity)
+            );
+          }
+      
+          function highlightNavLink() {
+            const activeIndex = getActiveSection();
+      
+            navLinks.forEach((navLink, index) => {
+              navLink.classList.toggle("active", index === activeIndex);
+            });
+          }
+      
+          window.addEventListener("scroll", highlightNavLink);
+        });
+      </script>
+      
+</body>
+</html>

@@ -1,0 +1,173 @@
+ html{
+ scroll-behavior: smooth;
+ }
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: 'Raleway', sans-serif;
+ color: #333;
+ line-height: 1.6;
+ margin: 0;
+ }
+ header {
+ display: flex;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 40%;
+ height: 100vh;
+ background-color: #fff;
+ color: #333;
+ padding: 20px;
+ overflow: hidden;
+ }
+ .header-content {
+ flex: 1;
+ text-align: left;
+ padding-top: 50px;
+ position: relative;
+ right: 15%;
+ }
+ .header-content h1 {
+ font-size: 24px;
+ margin-bottom: 5px;
+ font-family: 'Raleway', sans-serif;
+ }
+ .header-content p {
+ font-size: 14px;
+ margin-bottom: 10px;
+ font-family: 'Roboto',sans-serif;
+ }
+ .social-links {
+ margin-top: 100%;
+ display: inline-block;
+ z-index: 1;
+ }
+ .social-links a {
+ margin-right: 10px;
+ color: #333;
+ text-decoration: none;
+ font-size: 18px;
+ position: relative;
+ right: 250px;
+ bottom: 100px;
+ }
+ nav {
+ flex: 1;
+ position: relative;
+ top: 35%;
+ left: 35%;
+ z-index: 1;
+ }
+ nav ul {
+ list-style: none;
+ }
+ nav li {
+ margin-bottom: 10px;
+ }
+ nav a {
+ text-decoration: none;
+ color: #333;
+ font-weight: bold;
+ transition-duration: 0.3s;
+ }
+ nav a.active {
+ font-size: 20px;
+ font-weight: bold;
+ }
+ section {
+ padding: 40px 20px;
+ position: relative;
+ left: 40%;
+ width: 60%;
+ }
+ section h2 {
+ font-size: 24px;
+ margin-bottom: 20px;
+ text-align: center;
+ }
+ section p{
+ font-family: 'Roboto',sans-serif;
+ }
+ .skills ul{
+ text-align: center;
+ list-style:none;
+ }
+ .skills li{
+ padding: 5px;
+ font-family: 'Roboto',sans-serif;
+ }
+ .project{
+ text-align: center;
+ padding:10px ;
+ }
+ .project h3{
+ position: relative;
+ padding: 10px;
+ }
+ .project p {
+ text-align: left;
+ padding: 3px;
+ }
+ .project p b {
+ font-family: 'Roboto',sans-serif;
+ }
+ .case-studies-container{
+ text-align: center;
+ padding:10px ;
+ }
+ .case-studies-container h3{
+ position: relative;
+ padding: 10px;
+ }
+ .case-studies-container p {
+ text-align: left;
+ padding: 3px;
+ }
+ .case-studies-container p b {
+ font-family: 'Raleway', sans-serif;
+ }
+ .contact form {
+ max-width: 400px;
+ margin: 0 auto;
+ text-align: center;
+ }
+ .contact label {
+ display: block;
+ margin-bottom: 5px;
+ }
+ .contact input,
+ .contact textarea {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 15px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ }
+ .contact textarea {
+ height: 120px;
+ }
+ .contact button {
+ color: #333;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 3px;
+ cursor: pointer;
+ transition-duration: 0.4s;
+ border-color: #333;
+ border-style: solid;
+ border-width: 2px;
+ }
+ .contact button:hover {
+ background-color: #333;
+ color: #fff;
+ }
+ footer {
+ background-color: #fff;
+ color: #333;
+ text-align: center;
+ padding: 20px 0;
+ }
